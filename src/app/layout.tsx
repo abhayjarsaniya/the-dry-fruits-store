@@ -8,7 +8,6 @@ import { InquiryForm } from "@/components/inquiry-form";
 import { MobileDrawer } from "@/components/mobile-drawer";
 import { SearchDialog } from "@/components/search-dialog";
 import { StoreProvider } from "@/components/store";
-// Raj Dryfruits official website layout
 import "./globals.css";
 
 const serif = Cormorant_Garamond({
@@ -36,14 +35,15 @@ const script = Great_Vibes({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${BRAND} — Premium Dry Fruits, Chocolates, Coffee & Tea | Ahmedabad`,
+    default: `${BRAND} — Premium Dry Fruits, Nuts, Dates & Festive Gifting | Ahmedabad`,
     template: `%s · ${BRAND}`,
   },
   description:
-    "Premium dry fruits, chocolates, coffee, tea and celebration boxes from Raj Dryfruits & Mukhwas, Ahmedabad. Choose your favourites and send a WhatsApp inquiry.",
+    "Handpicked premium dry fruits, California almonds, cashews, pistachios, dates, walnuts and celebration boxes from The Dry Fruits Store, Bapunagar, Ahmedabad. Send inquiries directly on WhatsApp.",
   openGraph: {
     title: `${BRAND_FULL} · Ahmedabad`,
-    description: "Premium dry fruits, chocolates, coffee, tea and celebration boxes — ordered through a simple WhatsApp inquiry.",
+    description:
+      "Handpicked dry fruits, premium nuts, healthy snacking and celebration gift boxes from The Dry Fruits Store — ordered easily through WhatsApp inquiry.",
     images: ["/images/hero-composition.jpg"],
     locale: "en_IN",
     type: "website",
@@ -51,7 +51,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: BRAND_FULL,
-    description: "Premium dry fruits, chocolates, coffee, tea and celebration boxes, ordered on WhatsApp.",
+    description:
+      "Handpicked premium dry fruits, nuts and curated celebration gift hampers from The Dry Fruits Store, Ahmedabad.",
     images: ["/images/hero-composition.jpg"],
   },
 };
@@ -63,9 +64,10 @@ const structuredData = {
       "@type": "Store",
       name: BRAND_FULL,
       url: absoluteUrl("/"),
-      telephone: "+91-9712698899",
+      telephone: "+91-7878555518",
       image: absoluteUrl("/images/hero-composition.jpg"),
-      description: "Premium dry fruits, chocolates, coffee, tea and celebration boxes. Orders are placed as WhatsApp inquiries.",
+      description:
+        "Premium dry fruits, almonds, cashews, pistachios, walnuts, dates, and celebration gift boxes. Inquiries placed directly via WhatsApp.",
       address: {
         "@type": "PostalAddress",
         streetAddress: STORE_ADDRESS.line1 + ", " + STORE_ADDRESS.line2,
@@ -76,7 +78,7 @@ const structuredData = {
       },
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "4.6",
+        ratingValue: "4.8",
         bestRating: "5",
       },
       areaServed: "IN",

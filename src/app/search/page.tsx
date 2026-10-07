@@ -4,7 +4,7 @@ import { SearchResults } from "@/components/search-results";
 
 export const metadata: Metadata = {
   title: "Search",
-  description: "Search Raj dry fruits, chocolates, coffee and tea.",
+  description: "Search premium dry fruits, nuts, dates, seeds and gift boxes at The Dry Fruits Store.",
 };
 
 export default function Page() {

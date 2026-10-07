@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact-form";
 import {
-  BRAND_FULL,
   GOOGLE_MAPS_URL,
   STORE_ADDRESS,
   STORE_NAME,
@@ -13,7 +12,7 @@ import { generalInquiryMessage, whatsappHref } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Contact & Store Location",
   description:
-    "Visit Raj Dryfruits & Mukhwas at Anand Nagar Road, Ahmedabad or send an inquiry on WhatsApp +91 9712698899.",
+    "Visit The Dry Fruits Store at Hariom Nagar, Bapunagar, Ahmedabad or send an inquiry on WhatsApp +91 78785 55518.",
 };
 
 export default function ContactPage() {
@@ -28,7 +27,7 @@ export default function ContactPage() {
             Tell Us What You Would Like.
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-stone-600">
-            Availability, fresh pricing and delivery are confirmed directly in chat. Write to us, or visit our retail store in Ahmedabad.
+            Freshness, quality grades, custom packaging and doorstep delivery are confirmed directly in chat. Write to us on WhatsApp, or visit our store in Ahmedabad.
           </p>
 
           <div className="mt-8 rounded-2xl border border-stone-200 bg-[#fbf9f6] p-4 min-[360px]:p-5 sm:p-6">
@@ -43,7 +42,7 @@ export default function ContactPage() {
               <p className="font-medium text-ink">{STORE_ADDRESS.line1}</p>
               <p>{STORE_ADDRESS.line2}</p>
               <p>{STORE_ADDRESS.area}, {STORE_ADDRESS.city}</p>
-              <p>{STORE_ADDRESS.state} – {STORE_ADDRESS.pincode}</p>
+              <p>{STORE_ADDRESS.state} – {STORE_ADDRESS.pincode}, {STORE_ADDRESS.country}</p>
             </address>
 
             <div className="mt-4 flex flex-col gap-2 min-[400px]:flex-row min-[400px]:flex-wrap min-[400px]:items-center min-[400px]:gap-3">
@@ -68,7 +67,7 @@ export default function ContactPage() {
           </div>
 
           <p className="mt-6 text-xs text-stone-500">
-            Open through the week for inquiries, tasting and store visits.
+            Open through the week for dry fruit inquiries, gift box planning and store visits.
           </p>
         </div>
 

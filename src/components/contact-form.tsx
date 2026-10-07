@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { WHATSAPP_DISPLAY } from "@/data/site";
+import { STORE_NAME, WHATSAPP_DISPLAY } from "@/data/site";
 import { whatsappHref } from "@/lib/whatsapp";
 
 export function ContactForm() {
   const [name, setName] = useState("");
   const [note, setNote] = useState("");
 
-  const message = `Hello Raj Dryfruits,
+  const message = `Hello The Dry Fruits Store,
 
 I would like to inquire about your products.
 
@@ -71,7 +71,7 @@ Thank you.`;
       </button>
 
       <p className="mt-3 text-center text-[11px] text-stone-400">
-        Direct chat with the Raj Dryfruits team. No automated bots.
+        Direct chat with {STORE_NAME}. No automated bots.
       </p>
     </form>
   );

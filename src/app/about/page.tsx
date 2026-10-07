@@ -14,7 +14,7 @@ import { InquiryLink } from "@/components/inquiry-link";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Raj Dryfruits & Mukhwas is a premium dry fruits, chocolates and celebration boxes store located on Anand Nagar Road, Ahmedabad.",
+    "The Dry Fruits Store is a premium dry fruits, nuts, dates, and celebration gift boxes destination located in Bapunagar, Ahmedabad.",
 };
 
 export default function AboutPage() {
@@ -24,21 +24,21 @@ export default function AboutPage() {
         {/* LEFT: Content & Store Details */}
         <article className="flex flex-col">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#6E2635]">
-            About Raj Dryfruits &amp; Mukhwas
+            About {STORE_NAME}
           </p>
           <h1 className="mt-2.5 font-serif text-3xl font-medium leading-[1.1] text-ink sm:mt-3 sm:text-5xl lg:text-6xl">
-            Selected Slowly. Inquired Simply.
+            Pure Freshness. Chosen for Every Occasion.
           </h1>
 
           <div className="mt-6 space-y-4 text-sm leading-relaxed text-stone-600 sm:mt-8 sm:text-base">
             <p>
-              {BRAND_FULL} is a trusted local destination in Ahmedabad for premium dry fruits, artisanal chocolates, single-origin coffee, fine teas, and festive celebration boxes. Our selection brings together wholesome nuts, rich chocolates and thoughtful gift combinations that we are genuinely proud to present.
+              {BRAND_FULL} is a dedicated dry fruit destination in Ahmedabad, offering carefully sourced California almonds, premium cashews, rich Iranian pistachios, authentic Kashmiri walnuts, soft Medjool dates, and curated festive hampers. Every batch is chosen for uncompromising quality, natural crunch, and nutrient richness.
             </p>
             <p>
-              This website functions as a clean product catalog and WhatsApp inquiry portal. Choose your favourite items and weights freely (up to 10 quantity per product). When ready, share delivery details, and your inquiry opens directly in WhatsApp with {WHATSAPP_DISPLAY}.
+              Our website serves as a convenient digital storefront and direct WhatsApp inquiry platform. Browse our complete range of whole nuts, seeds, dried fruits, and celebration hampers, choosing your preferred weights and pack sizes (up to 10 quantity per product). When you are ready, share your delivery details, and your inquiry opens directly in WhatsApp with {WHATSAPP_DISPLAY}.
             </p>
             <p>
-              Our store team personally confirms availability, final pricing, doorstep delivery and any special packaging requests. No confusing checkouts or online payment gateways — just transparent, warm local service.
+              Our dedicated store team personally assists you with stock availability, festive packaging, doorstep delivery, and corporate gifting needs. Experience wholesome quality backed by genuine, warm service.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
             <address className="mt-3 not-italic text-xs leading-relaxed text-stone-600 sm:text-sm">
               <p className="font-medium text-ink">{STORE_ADDRESS.line1}</p>
               <p>{STORE_ADDRESS.line2}</p>
-              <p>{STORE_ADDRESS.area}, {STORE_ADDRESS.city} – {STORE_ADDRESS.pincode}</p>
+              <p>{STORE_ADDRESS.area}, {STORE_ADDRESS.city} – {STORE_ADDRESS.pincode}, {STORE_ADDRESS.country}</p>
             </address>
             <div className="mt-4 flex flex-col gap-2 min-[400px]:flex-row min-[400px]:flex-wrap min-[400px]:items-center min-[400px]:gap-3 text-xs font-semibold text-[#6E2635]">
               <a
@@ -81,13 +81,13 @@ export default function AboutPage() {
           </div>
         </article>
 
-        {/* RIGHT: Premium Raj Dryfruits Showcase Image */}
+        {/* RIGHT: Premium Dry Fruits Showcase Image */}
         <div className="mt-4 lg:mt-0 lg:sticky lg:top-24">
           <div className="overflow-hidden rounded-[24px] border border-[#e6e2dc] bg-[#fbf9f6] p-3 shadow-md sm:rounded-[28px] sm:p-4">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[18px] bg-white sm:rounded-[20px] lg:aspect-[5/4]">
               <Image
                 src="/images/hero-composition.jpg"
-                alt="Premium assortment of dry fruits, almonds, cashews, pistachios, dates and walnuts from Raj Dryfruits Ahmedabad"
+                alt="Premium assortment of dry fruits, almonds, cashews, pistachios, dates and walnuts from The Dry Fruits Store Ahmedabad"
                 fill
                 priority
                 className="object-contain p-3 transition-transform duration-500 hover:scale-[1.02]"
@@ -96,10 +96,10 @@ export default function AboutPage() {
             </div>
             <div className="mt-3.5 px-2 pb-1 text-center">
               <p className="font-serif text-base font-semibold text-ink sm:text-lg">
-                Raj Dryfruits &amp; Mukhwas
+                {STORE_NAME}
               </p>
               <p className="mt-0.5 text-xs text-stone-500">
-                100 Feet Anand Nagar Road · Jodhpur Village, Ahmedabad
+                {STORE_ADDRESS.line1}, {STORE_ADDRESS.area} · Ahmedabad
               </p>
             </div>
           </div>
